@@ -12,4 +12,5 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.zig" },
 }
