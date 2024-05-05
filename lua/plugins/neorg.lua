@@ -1,3 +1,5 @@
+vim.o.conceallevel = 1
+
 return {
   "nvim-neorg/neorg",
   version = "^8",
@@ -32,20 +34,27 @@ return {
   event = "VeryLazy",
   opts = {
     load = {
-      ["core.defaults"] = {}, -- Loads default behaviour
-      ["core.concealer"] = {}, -- Adds pretty icons to your documents
-      ["core.keybinds"] = {}, -- Adds default keybindings
+      ["core.defaults"] = {},
+      ["core.concealer"] = {
+        config = {
+          icon_preset = "diamond",
+        },
+      },
+      ["core.export"] = {},
+      ["core.summary"] = {},
+      ["core.keybinds"] = {},
       ["core.completion"] = {
         config = {
           engine = "nvim-cmp",
         },
-      }, -- Enables support for completion plugins
-      ["core.journal"] = {}, -- Enables support for the journal module
-      ["core.dirman"] = { -- Manages Neorg workspaces
+      },
+      ["core.journal"] = {},
+      ["core.dirman"] = {
         config = {
           workspaces = {
-            notes = "~/projects/notes",
+            notes = "~/notes",
           },
+          default_workspace = "notes",
         },
       },
     },
