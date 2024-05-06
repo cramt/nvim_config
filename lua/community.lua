@@ -6,7 +6,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.just" },
   { import = "astrocommunity.pack.terraform" },
-  { import = "astrocommunity.pack.ruby" },
+  -- { import = "astrocommunity.pack.ruby" },
   { import = "astrocommunity.pack.nix" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.docker" },
