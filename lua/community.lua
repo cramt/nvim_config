@@ -13,4 +13,6 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.pack.kotlin" },
+  { import = "astrocommunity.pack.java" },
 }
